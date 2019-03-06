@@ -21,7 +21,7 @@ mainClassName = 'com.github.wololock.RatpackGraalDemoApp'
 dependencies {
     runtime 'org.slf4j:slf4j-simple:1.7.25'
 
-    compile 'com.oracle.substratevm:svm:1.0.0-rc12'
+    compileOnly 'com.oracle.substratevm:svm:1.0.0-rc13'
 
     testCompile "org.spockframework:spock-core:1.0-groovy-2.4"
 }
