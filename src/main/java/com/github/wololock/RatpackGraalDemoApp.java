@@ -21,8 +21,6 @@ final class RatpackGraalDemoApp {
                 server.serverConfig(config -> config.sysProps().development(false))
                         .handlers(chain -> chain.get(ctx -> ctx.render(json(message))))
         );
-
-        //System.exit(0);
     }
 
     @TargetClass(className = "io.netty.util.internal.PlatformDependent0")
