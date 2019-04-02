@@ -18,7 +18,7 @@ final class RatpackGraalDemoApp {
         }};
 
         RatpackServer.start(server ->
-                server.serverConfig(config -> config.sysProps().development(false))
+                server.serverConfig(config -> config.sysProps().development(false).threads(1))
                         .handlers(chain -> chain.get(ctx -> ctx.render(json(message))))
         );
     }

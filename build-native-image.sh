@@ -10,6 +10,7 @@ native-image --no-server \
     -H:+ReportUnsupportedElementsAtRuntime \
     -H:ReflectionConfigurationFiles=reflections.json \
     -H:DynamicProxyConfigurationFiles=proxies.json \
+    --verbose \
     --allow-incomplete-classpath \
     --delay-class-initialization-to-runtime=io.netty.handler.codec.http.HttpObjectEncoder,io.netty.handler.ssl.ReferenceCountedOpenSslEngine,io.netty.handler.ssl.ReferenceCountedOpenSslClientContext,io.netty.handler.ssl.ReferenceCountedOpenSslServerContext,io.netty.handler.ssl.JdkNpnApplicationProtocolNegotiator,io.netty.handler.ssl.JettyNpnSslEngine,io.netty.handler.ssl.ConscryptAlpnSslEngine,io.netty.util.internal.logging.Log4JLogger \
     -Dratpack.epoll.disable=true
